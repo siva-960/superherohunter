@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+    /* background-image: url("assets/background.jpg"); */
+    position: relative;
+}
+
+/* //container which holds images-cells  */
+.image-container{
+    display: grid;
+    grid-template-rows: repeat(3,1fr) ;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 10px;
+    /* grid-column-gap:1px; */
+}
+/* //which holds images */
+.image-cell{
+    background-color: white;
+    height: 215px;
+    width:215px;
+}
+
+.image-cell img{
+    height: 100%;
+    width: 100%;
+}
+
+/* styling for cards  */
+
+.card{
+   position: relative;
+  /* height: 100px;
+  width: 100%; */
+  box-shadow: -2px 0px 7px 2px red;
+}
+
+.card:hover{
+    box-shadow: -2px 0px 7px 2px rgb(221, 184, 184);
+}
+
+.fav{
+    position: absolute;
+    right: 2%;
+    color: whitesmoke;
+}
+
+.card-image img{
+   height: 215px;
+   width: 215px;
+}
+
+
+
+.card-details{
+    position: absolute;
+    color: darkgrey;
+    bottom: 1%;
+    font-size: 1.3rem;
+    font-weight:200px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nav{
+    height: 2rem;
+    width: 100%;
+    /* background-color: white; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    /* margin-right: 10%; */
+    /* display: inline; */
+}
+.links{
+    font-size: 1.3rem;
+    font-weight:200px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;   
+    color: darkgrey;
+}
+/* search box */
+.search{
+    width: 500px;
+    height: 40px;
+    background-color: black;
+    color: darkgrey;
+    font-size: 1.3rem;
+    font-weight:200px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;   
+}
+/* //super hero profile */
+
+#profile{
+    position: absolute;
+    height: 650px;
+    width: 800px;
+    top:5%;
+    left:20%;
+    background-color: darkgrey;
+    display: flex;
+}
+#profile img{
+    height:650px;
+    width:500px;
+}
+
+
